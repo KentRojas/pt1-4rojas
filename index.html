@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #99ff99;
+                grid-area: con;
+
+            }
+            .container {
+                display: grid;
+                background-color: #99ff99;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 550px;
+                grid-template-rows: 55px 460px;
+                grid-template-areas:
+                "head"
+                "con";
+            }
+            .flex-item-games {
+                background-color: rgb(81, 200, 255);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-sport {
+                background-color: rgb(68, 255, 165);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-places {
+                background-color: rgb(255, 228, 141);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-info {
+                background-color: rgb(235, 179, 255);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-home {
+                background-color: rgb(223, 255, 141);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .head {
+                text-align:center;
+                grid-area: head;    
+                font-family: Courier, monospace;
+            }
+            @media screen and (max-width:600px) {
+                .container {
+                    display: grid;
+                background-color: #99ff99;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 150px;
+                grid-template-rows: 55px 460px;
+                grid-template-areas:
+                "head"
+                "con";
+                }
+            }
+        </style>
+    </head>
+    <body bgcolor="#99ff99">
+        <div class="container">
+            <div class="head">
+                <h1>&nbsp;ABOUT ME</h1>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-home"><a href="index.html" style="text-decoration: none;">Home</a></div>
+                <div class="flex-item-info"><a href="info.html" style="text-decoration: none;">Info</a></div>
+                <div class="flex-item-places"><a href="places.html" style="text-decoration: none;">Places</a></div>
+                <div class="flex-item-sport"><a href="sport.html" style="text-decoration: none;">Sports</a></div>
+                <div class="flex-item-games"><a href="game.html" style="text-decoration: none;">Games</a></div>
+            </div>
+        </div>
+    </body>
+</html>

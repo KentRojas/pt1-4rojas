@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: #99ff99;
+                grid-area: con;
+
+            }
+            .container {
+                display: grid;
+                background-color: #99ff99;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 550px;
+                grid-template-rows: 55px 72px;
+                grid-template-areas:
+                "head"
+                "con";
+            }
+            .flex-item-games {
+                background-color: rgb(81, 200, 255);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-sport {
+                background-color: rgb(68, 255, 165);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-places {
+                background-color: rgb(255, 228, 141);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-info {
+                background-color: rgb(235, 179, 255);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .flex-item-home {
+                background-color: rgb(223, 255, 141);
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                line-height: 51px;
+                font-size: 23px;
+                border: 2px solid black;
+                font-family: Courier, monospace;
+                font-weight: bold;
+            }
+            .head {
+                text-align:center;
+                grid-area: head;    
+                font-family: Courier, monospace;
+            }
+            .font {
+                font-family: Courier, monospace;
+                font-weight: bold;
+                text-align: center;
+                font-size: 50px;
+            }
+            .text {
+                font-family: Courier, monospace;
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .concon {
+                display: grid;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 510px 510px 510px;
+                grid-template-rows: 200px 900px;
+                grid-template-areas:
+                "head head head"
+                "con1 con2 con3";
+            }
+            .con1 {
+                grid-area: con1;
+            }
+            .con2 {
+                grid-area: con2;
+            }
+            .con3 {
+                grid-area: con3;
+            }
+            @media screen and (max-width:1000px) {
+                .container {
+                    display: grid;
+                background-color: #99ff99;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 150px;
+                grid-template-rows: 55px 70px;
+                grid-template-areas:
+                "head"
+                "con";
+                }
+                .concon {
+                display: grid;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: 510px;
+                grid-template-rows: 200px 320px 320px 320px;
+                grid-template-areas:
+                "head"
+                "con1"
+                "con2"
+                "con3";
+            }
+        }
+        </style>
+    </head>
+    <body bgcolor="#99ff99">
+        <div class="container">
+            <div class="head">
+                <h1>&nbsp;ABOUT ME</h1>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item-home"><a href="index.html" style="text-decoration: none;">Home</a></div>
+                <div class="flex-item-info"><a href="info.html" style="text-decoration: none;">Info</a></div>
+                <div class="flex-item-places"><a href="places.html" style="text-decoration: none;">Places</a></div>
+                <div class="flex-item-sport"><a href="sport.html" style="text-decoration: none;">Sports</a></div>
+                <div class="flex-item-games"><a href="game.html" style="text-decoration: none;">Games</a></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="concon">
+            <div class="head">
+                <p class="font">
+                    Favorite Places
+                </p>
+                <p class="text">
+                    I usually like places that has a nice view.
+                </p>
+            </div>
+            <div class="con1">
+                <img src="places3.jpg" width="500px" height="360px">
+            </div>
+            <div class="con2">
+                <img src="places2.jpg" width="500px" height="360px">
+            </div>
+            <div class="con3">
+                <img src="places1.jpg" width="500px" height="360px">
+            </div>
+        </div>
+    </body>
+</html>
